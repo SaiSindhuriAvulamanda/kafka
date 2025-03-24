@@ -32,7 +32,7 @@ Any workflows that use the `run` directive should avoid using the `${{ ... }}` s
 Instead, declare all injectable variables as environment variables. For example:
 
 ```yaml
-    - name: Copy RC Image to promoted image new
+    - name: Copy RC Image to promoted image 
       env:
         PROMOTED_DOCKER_IMAGE: ${{ github.event.inputs.promoted_docker_image }}
         RC_DOCKER_IMAGE: ${{ github.event.inputs.rc_docker_image }}
