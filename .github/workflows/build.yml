@@ -215,7 +215,7 @@ jobs:
         with:
           name: combined-test-catalog
 
-      - name: JUnit Tests
+      - name: JUnit Tests run
         id: junit-test
         uses: ./.github/actions/run-gradle
         with:
